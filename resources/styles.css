@@ -1,0 +1,209 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Helvetica;
+  width:100%;
+}
+
+/* Header Section */
+
+.header{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  height:100px;
+  background-color: black;
+  color:white;
+}
+
+.logo img{
+  width:100px;
+  height:50px;
+  margin-left: 2rem;
+  margin-right:2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* Break down of each piece in the Header Section and gave it it's appopriate
+spacing*/
+
+/* Main Image Section */
+
+.main-image {
+  background-image: url("black-white-game.jpg");
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Gave this section a background image and made it 100% width of the webpage
+we also included a specific height and its flex items are centered*/
+
+.box{
+  background-color: black;
+  opacity:0.8;
+  color:khaki;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left:2rem;
+  padding-right: 2rem;
+  height:100px;
+  font-weight:bold;
+}
+/* This is a flex item and flex container. All flex items of this will
+be in column style and thus making x and y axis reversed. so justify content
+will be oriented as center and align items will be flex-start. We also gave This
+some opacity and padding space */
+
+.box h2{
+  margin-bottom:10px;
+}
+.box h1{
+  font-size: 2rem;
+}
+
+/* List Section */
+
+.listing {
+background-color: black;
+color: white;
+height:auto;
+font-size: 2rem;
+font-weight:bold;
+display: flex;
+justify-content: center;
+align-items: center;
+width:100%;
+}
+
+/* Give the listing section a full width of the webpage. give the height an auto
+amount and then make it all centered for its flex items. */
+
+.listing ul{
+  list-style-type: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* We make the unordered list a flex container as well as a flex item. here all
+the li of the list will be flex items centered both vertically and horizontally.
+we will also wrap these elements li */
+
+.listing ul li{
+  display: inline-block;
+  margin: 1rem 5rem; /* Give margin space across each li in the list. */
+  width:15%; /* each li will occupy a 15% of the total width of the section */
+}
+
+ul li:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Image Gallery Section */
+
+.gallery{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.picture{
+  display:flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
+  font-weight: bold;
+  width:30%;
+}
+
+/* Each picture will occupy 30% of the width of the gallery section, and have
+respective margin space. */
+
+.picture img {
+  width: 100%;
+  height:300px;
+}
+/* The image of the picture section will occupy the 100% width of the picture width.
+we also give it a specific height*/
+
+.picture h1{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color:black;
+  height:3rem;
+  padding: 15px;
+}
+/* This is for the wording section of the picture, Here we will customize the font.
+and give specific height, as well as padding properities. */
+
+.one{
+  border: 5px solid green;
+}
+
+.two{
+  border: 5px solid red;
+}
+
+.three{
+  border: 5px solid blue;
+}
+
+/*Tabs Section */
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.square{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+}
+/* each square will occupy 45% of the with of the tabs section. and it will
+also be a flex item in addition to being a flex container. with column
+orintation. */
+
+.square h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  background-color: black;
+  width:100%;
+  color: white;
+  display:flex;
+  height:5rem;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer h1{
+  margin-left: 3rem;
+}
