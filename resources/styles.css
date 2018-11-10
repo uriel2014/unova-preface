@@ -17,6 +17,7 @@ body {
   height:100px;
   background-color: black;
   color:white;
+  width:100%;
 }
 
 .logo img{
@@ -206,4 +207,87 @@ footer{
 
 footer h1{
   margin-left: 3rem;
+}
+
+
+/* Changes in Screen sizes */
+
+/* Now for a screen size that is at max of 470px*/
+
+@media only screen and (min-width:320px) and (max-width:500px){
+
+.logo{
+  width:40%;
+}
+
+  .logo img{
+    width:90%;
+    margin: 0 1rem;
+    height:auto;
+  }
+
+  .header h1{font-size: 1.5rem;
+  padding-left: 0.5rem;}
+
+  /* Change the heading section to accodomate to the smaller screen size*/
+  .main-image{
+    height:15rem;
+    width:100%;
+  }
+   .box {
+    width:100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    margin-top:3rem;
+    height: auto;
+  }
+  /* Here we change some margin from the top to make it fit near the center*/
+  .box h5{
+    font-size:0.77rem;
+  }
+  .box h1{
+    font-size:1rem;
+  }
+
+/* LISTING SECTION */
+ .listing{
+   justify-content: flex-start;
+ }
+
+ .listing ul {
+   justify-content: flex-start;
+ }
+.listing ul li {
+  width:100%;
+  margin:1rem 0;
+  padding-left: 1rem;
+}
+
+/* For the .listing section we changed the value of the justify content to fit
+flex-start. We also gave the li of the unordered list a width of 90% and less
+margin space. */
+
+
+/* GALLERY SECTION */
+  .gallery{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+/* Here we will change the justify content property of the gallery section
+such that the orientation is best fit for a smaller screen.*/
+  .picture{
+    width:90%;
+    margin:1rem;
+  }
+
+  /* TABS SECTION */
+
+  .tabs{
+    flex-wrap: wrap;
+  }
+  .square{
+    width:100%;
+    margin-bottom:0.5rem;
+  }
+footer{text-align:center;}
 }
