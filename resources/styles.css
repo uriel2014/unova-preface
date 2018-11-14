@@ -35,7 +35,6 @@ body {
 spacing*/
 
 /* Main Image Section */
-
 .main-image {
   background-image: url("black-white-game.jpg");
   width:100%;
@@ -46,6 +45,7 @@ spacing*/
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 /* Gave this section a background image and made it 100% width of the webpage
 we also included a specific height and its flex items are centered*/
@@ -107,7 +107,7 @@ we will also wrap these elements li */
 .listing ul li{
   display: inline-block;
   margin: 1rem 5rem; /* Give margin space across each li in the list. */
-  width:15%; /* each li will occupy a 15% of the total width of the section */
+  width:20%; /* each li will occupy a 20% of the total width of the section */
 }
 
 ul li:hover{
@@ -214,7 +214,7 @@ footer h1{
 
 /* Now for a screen size that is at max of 470px*/
 
-@media only screen and (min-width:320px) and (max-width:500px){
+@media only screen and (min-width:300px) and (max-width:500px){
 
 .logo{
   width:40%;
@@ -231,6 +231,10 @@ footer h1{
 
   /* Change the heading section to accodomate to the smaller screen size*/
   .main-image{
+    background-image: url("black-white-one.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height:15rem;
     width:100%;
   }
